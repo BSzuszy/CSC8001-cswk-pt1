@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=name\ nation\ start\ sqKm
+comment0.target=Observatory(java.lang.String,\ java.lang.String,\ int,\ double)
+comment1.params=e
+comment1.target=void\ addEarthquake(Earthquake)
+comment2.params=
+comment2.target=int\ getNumberOfEarthquakes()
+comment3.params=
+comment3.target=void\ listAllEarthquakes()
+comment3.text=\ method\ to\ list\ current\ earthquakes\ and\ their\ details\ in\ \r\n\ string\ form\r\n
+comment4.params=
+comment4.target=void\ listMagnitudes()
+comment5.params=
+comment5.target=void\ magMax()
+comment5.text=Prints\ largest\ magnitude\ earthquake\ recorded\ by\ observatory.\r\nand\ its\ details.\r\nlargest\=temporary\ variable\ is\ assigned\ an\ index\ at\ \r\n\ \ \ start\ of\ arraylist\r\ne\=temporary\ index\ assigned\ to\ iterator.\r\nFor\ each\ loop\ runs\ through\ whole\ arraylist\r\nAt\ each\ new\ index,\ "largest"&\ current-index\ calls\ "getMagnitude"\ \r\n\ and\ compare\ magnitude\ values.\r\n\ if\ current-index\ mag>\ "largest",\ reassign\ that\ index\ to\ "largest".\r\n\ Print\ the\ details\ of\ index\ set\ to\ "largest".\r\n
+comment6.params=
+comment6.target=double\ avgMagnitude()
+comment6.text=\ Calculate\ average\ magnitude.\r\n\ set\ local\ variable\ "total"\ to\ 0\r\n\ iterate\ over\ arraylist\ adding\ each\ EQ\ magnitude\ to\ total\r\n\ Divide\ total\ by\ number\ of\ objects\ in\ arraylist\r\n
+comment7.params=cutoff
+comment7.target=void\ getMagnitudeAbove(double)
+comment7.text=Print\ magnitudes\ above\ a\ certain\ level\ (parameter\ cutoff)\r\n\ set\ local\ variable\ "filter"\ to\ \=\ cutoff\r\n\ iterate\ over\ arraylist\ comparing\ each\ EQ\ Mag\ to\ cutoff\ double.\r\n\ IF\ getMagnitude\ >\ cutoff\ (only\ greater\ than\ no\ equal\ to)\r\n\ print\ out\ that\ Earthquakes\ details\ using\ getDetails\ method.\r\n
+comment8.params=
+comment8.target=java.lang.String\ getObDetails()
+numComments=9
