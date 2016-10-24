@@ -1,3 +1,5 @@
+package Cswkpt1;
+
 import java.util.ArrayList; //import array list class
 
 
@@ -15,6 +17,7 @@ public class Observatory
     private int beganObs;
     private double areaCov;
     private double avgMag;
+    private double magMax;
     //ArrayList for storing earthquakes in.
     private ArrayList<Earthquake> list;
     
@@ -28,6 +31,7 @@ public Observatory(String name, String nation, int start, double sqKm)
         beganObs= start;
         areaCov= sqKm;
         avgMag=0.0;
+        magMax=0.0;
         list=new ArrayList<Earthquake>();
            }
        
@@ -78,7 +82,7 @@ System.out.println();
 * Print the details of index set to "largest".
 */
 
-public void magMax()
+public double magMax()
  {
      Earthquake largest=list.get(0);
         for(int i=1; i<list.size();i++)
@@ -88,7 +92,8 @@ public void magMax()
                largest = e;
               }
         }
-           System.out.println(largest.getDetails());          
+           System.out.println(largest.getDetails());      
+           return magMax;
  }
   
 
@@ -131,6 +136,6 @@ public void getMagnitudeAbove(double cutoff)
 
  public String getObDetails()
 {
-    return "Observatory:" + obsName + "Nation: " + country + "Started Observing: " + beganObs + "Square Kilometers Covered: " + areaCov+"sqkm.";
+    return "Observatory: " + obsName + ", Nation: " + country + ", Started Observing: " + beganObs + ", Square Kilometers Covered: " + areaCov+"sqkm.";
 }
 }

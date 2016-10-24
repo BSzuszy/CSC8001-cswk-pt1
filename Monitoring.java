@@ -1,3 +1,5 @@
+package Cswkpt1;
+
 import java.util.ArrayList;
 
 /**
@@ -47,4 +49,19 @@ public class Monitoring
  
  
 }
+public void totalMagMax()
+{
+    Observatory largest=grid.get(0);
+    Earthquake tLargest=earthquake.list.get(0);
+        for(int i=1; 1<grid.size(); i++)
+        {
+            Observatory o =grid.get(i);
+            if(o.magMax()>largest.magMax())
+            {
+                largest=o;
+            }
+            
 }
+}
+}
+

@@ -1,3 +1,5 @@
+package Cswkpt1;
+
 
 /**
  * Write a description of class Earthquake here.

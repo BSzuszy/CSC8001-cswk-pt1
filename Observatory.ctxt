@@ -11,7 +11,7 @@ comment3.text=\ method\ to\ list\ current\ earthquakes\ and\ their\ details\ in\
 comment4.params=
 comment4.target=void\ listMagnitudes()
 comment5.params=
-comment5.target=void\ magMax()
+comment5.target=double\ magMax()
 comment5.text=Prints\ largest\ magnitude\ earthquake\ recorded\ by\ observatory.\r\nand\ its\ details.\r\nlargest\=temporary\ variable\ is\ assigned\ an\ index\ at\ \r\n\ \ \ start\ of\ arraylist\r\ne\=temporary\ index\ assigned\ to\ iterator.\r\nFor\ each\ loop\ runs\ through\ whole\ arraylist\r\nAt\ each\ new\ index,\ "largest"&\ current-index\ calls\ "getMagnitude"\ \r\n\ and\ compare\ magnitude\ values.\r\n\ if\ current-index\ mag>\ "largest",\ reassign\ that\ index\ to\ "largest".\r\n\ Print\ the\ details\ of\ index\ set\ to\ "largest".\r\n
 comment6.params=
 comment6.target=double\ avgMagnitude()
